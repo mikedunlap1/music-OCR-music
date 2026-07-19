@@ -50,4 +50,8 @@ demo = gr.Interface(
     description="Upload a sheet music image to get notation, MIDI, and playable audio.",
 )
 
-demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
+demo.launch(
+    server_name="0.0.0.0",
+    server_port=int(os.environ.get("PORT", 7860)),
+    ssr_mode=False,
+))))
